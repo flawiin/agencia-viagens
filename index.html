@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência de Viagens - Pacotes e Destinos Exclusivos</title>
+
+    <!-- SEO Básico -->
+    <meta name="description" content="Descubra os melhores destinos com nossa agência de viagens. Pacotes exclusivos, preços competitivos e atendimento personalizado para tornar sua viagem inesquecível." />
+    <meta name="keywords" content="viagens, turismo, pacotes de viagem, destinos, férias, agência de viagens, roteiros" />
+
+    <!-- Indexação e Autoria -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Flávio Pimentel" />
+    <meta name="revisit-after" content="7 days" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__content">
+          <img src="./assets/img/local-logo.png" alt="Logo da Agência de Viagens" class="header__logo" />
+          <h1 class="header__title">Agência de Viagens</h1>
+        </div>
+      </header>
+      <main class="main">
+        <section class="quote-section">
+          <div class="quote-section__header">
+            <img src="./assets/img/aviao.png" alt="Ícone de avião representando viagens" class="quote-section__icon" />
+            <h2 class="quote-section__title">Solicite um orçamento</h2>
+          </div>
+          <form action="" class="quote-form">
+            <h2 class="quote-form__title">Informe seus dados</h2>
+
+            <fieldset class="fieldset">
+              <legend class="fieldset__legend">Dados pessoais</legend>
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Nome completo" required class="form-input" />
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="E-mail para contato" required class="form-input" />
+              <label for="celular" class="form-label">Celular</label>
+              <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX" required class="form-input" />
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend class="fieldset__legend">Período da viagem</legend>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="data-ida" class="form-label">Data da ida</label>
+                  <input type="date" name="data_ida" id="data-ida" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label for="data-volta" class="form-label">Data da volta</label>
+                  <input type="date" name="data_volta" id="data-volta" class="form-input" />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend class="fieldset__legend">Localização</legend>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="origem" class="form-label">Origem</label>
+                  <select name="origem" id="origem" required class="form-select">
+                    <option value="">Partindo de</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="destino" class="form-label">Destino</label>
+                  <select name="destino" id="destino" required class="form-select">
+                    <option value="">Indo para</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend class="fieldset__legend">Quarto com cama infantil?</legend>
+              <div class="form-row">
+                <div class="form-radio-group">
+                  <input type="radio" name="quarto_infantil" id="quarto-sim" value="sim" class="form-radio" />
+                  <label for="quarto-sim" class="form-label form-label--radio">Sim</label>
+                </div>
+                <div class="form-radio-group">
+                  <input type="radio" name="quarto_infantil" id="quarto-nao" value="nao" class="form-radio" />
+                  <label for="quarto-nao" class="form-label form-label--radio">Não</label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
