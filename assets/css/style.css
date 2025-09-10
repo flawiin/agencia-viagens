@@ -29,14 +29,17 @@ html {
 .header__logo {
   width: 40px;
   height: 40px;
-  filter: hue-rotate(270deg) saturate(1.5); /* Deixa o ícone com tom roxo */
 }
 
 .header__title {
-  color: #333;
+  color: #6f42c1;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
+}
+
+main {
+  background-color: #f1f3f4;
 }
 
 .quote-section {
@@ -108,7 +111,6 @@ html {
   flex-direction: column;
   gap: 0.75rem; /* Reduzido de 1rem para 0.75rem */
   border: none;
-  
 }
 
 .fieldset {
@@ -228,3 +230,103 @@ html {
 .form-button:active {
   background-color: #4e1f7a;
 }
+
+.offers-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.offers-section__container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.offers-section__title {
+  margin-bottom: .625rem;
+}
+
+.offers-section__subtitle {
+  margin-bottom: 1.25rem;
+}
+
+.offers-gallery__featured {
+  flex: 1 1 300px;
+}
+
+.offers-gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 1 1 300px;
+  gap: 0.8rem;
+}
+
+.offers-gallery__image {
+  width: 100%;
+  object-fit: cover;
+  height: 12.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offers-gallery__image:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.offers-gallery__image--featured {
+  height: 25.8125rem;
+}
+
+.nature-section__wrapper {
+  width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.nature-section__title {
+  margin-bottom: .625rem;
+}
+
+.nature-section__subtitle {
+  margin-bottom: 1.25rem;
+}
+
+.nature-destinations {
+  display: flex;
+  gap: 1rem;
+}
+
+.destination-card {
+  flex: 1 1 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card__image {
+  width: 100%;
+  border-radius: 0;
+  display: block;
+}
+
+
+.destination-card__content {
+  background-color: #fff;
+  padding: 1.25rem;
+}
+
+.destination-card__price {
+  margin-top: 10px;
+  color: #666;
+}
+
+
