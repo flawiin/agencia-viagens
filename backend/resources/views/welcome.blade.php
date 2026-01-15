@@ -15,7 +15,6 @@
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @else
             <style>
-            <style>
                 /* Tailwind CSS v4.0.7 inline styles - vertical-align properties on block display elements removed */
             </style>
         @endif
