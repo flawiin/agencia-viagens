@@ -1,6 +1,6 @@
 # 🌍 Agência de Viagens
 
-Um site moderno e responsivo para uma agência de viagens, desenvolvido com HTML5, CSS3 e foco em experiência do usuário e acessibilidade.
+Um site moderno e responsivo para uma agência de viagens, com frontend em HTML/CSS e backend em Laravel para receber orçamentos.
 
 ![Preview da Agência de Viagens](./assets/img/img-readme.png)
 
@@ -11,6 +11,7 @@ Um site moderno e responsivo para uma agência de viagens, desenvolvido com HTML
 - **Seção Natureza**: Cards destacando destinos naturais com preços
 - **Design Responsivo**: Layout adaptável para desktop, tablet e mobile
 - **Acessibilidade**: Implementação de boas práticas de acessibilidade web
+- **API de Orçamentos**: Endpoint para criar e listar orçamentos via Laravel
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -19,6 +20,7 @@ Um site moderno e responsivo para uma agência de viagens, desenvolvido com HTML
 - **Metodologia BEM**: Nomenclatura consistente para classes CSS
 - **Design Responsivo**: Media queries para diferentes dispositivos
 - **SEO Otimizado**: Meta tags e estrutura otimizada para mecanismos de busca
+- **PHP / Laravel**: Backend para persistência de orçamentos
 
 ## 📁 Estrutura do Projeto
 
@@ -41,22 +43,9 @@ agencia-viagens/
 │       ├── goias.jpg       # Cachoeira Santa Bárbara
 │       └── Passo-3-layout-finalizado.jpeg  # Layout de referência
 ├── README.md               # Documentação do projeto
+├── backend/                # API em Laravel
 └── .gitignore             # Arquivos ignorados pelo Git
 ```
-
-## 🎨 Design e Layout
-
-O projeto segue um design moderno com:
-
-- **Paleta de Cores**: 
-  - Roxo principal: `#6f42c1`
-  - Fundo claro: `#f1f3f4`
-  - Branco: `#fff`
-  - Textos: `#333`, `#666`
-
-- **Tipografia**: Sistema de fontes padrão para melhor compatibilidade
-- **Componentes**: Cards, formulários, galeria de imagens e footer
-- **Interações**: Hover effects e transições suaves
 
 ## 💻 Como Executar
 
@@ -64,7 +53,7 @@ O projeto segue um design moderno com:
 
 Apenas um navegador web moderno (Chrome, Firefox, Safari, Edge).
 
-### Instalação e Execução
+### Frontend (HTML)
 
 1. **Clone o repositório**:
    ```bash
@@ -87,6 +76,30 @@ Apenas um navegador web moderno (Chrome, Firefox, Safari, Edge).
      ```
 
 3. **Acesse no navegador**: `http://localhost:8000`
+
+### Backend (Laravel)
+
+1. **Entre na pasta do backend**:
+   ```bash
+   cd backend
+   ```
+
+2. **Configure o ambiente**:
+   ```bash
+   cp .env.example .env
+   composer install
+   php artisan key:generate
+   php artisan migrate
+   ```
+
+3. **Suba o servidor**:
+   ```bash
+   php artisan serve --host=127.0.0.1 --port=8000
+   ```
+
+4. **Endpoints**:
+   - `POST http://127.0.0.1:8000/api/orcamentos`
+   - `GET http://127.0.0.1:8000/api/orcamentos`
 
 ## 📱 Responsividade
 
@@ -121,7 +134,7 @@ Implementações de acessibilidade incluem:
 - Campos obrigatórios marcados
 - Tipos de input específicos (email, tel, date)
 - Agrupamento com fieldsets e legends
-- Action configurada para envio
+- Action configurada para envio para a API (`/api/orcamentos`)
 
 ### Galeria de Ofertas
 - Layout assimétrico com imagem destacada
@@ -165,10 +178,6 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## 👨‍💻 Autor
 
 **Flávio Pimentel**
-
-- LinkedIn: [Seu LinkedIn]
-- GitHub: [Seu GitHub]  
-- Email: [seu.email@example.com]
 
 ---
 
