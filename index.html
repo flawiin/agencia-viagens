@@ -6,8 +6,14 @@
     <title>Agência de Viagens - Pacotes e Destinos Exclusivos</title>
 
     <!-- SEO Básico -->
-    <meta name="description" content="Descubra os melhores destinos com nossa agência de viagens. Pacotes exclusivos, preços competitivos e atendimento personalizado para tornar sua viagem inesquecível." />
-    <meta name="keywords" content="viagens, turismo, pacotes de viagem, destinos, férias, agência de viagens, roteiros" />
+    <meta
+      name="description"
+      content="Descubra os melhores destinos com nossa agência de viagens. Pacotes exclusivos, preços competitivos e atendimento personalizado para tornar sua viagem inesquecível."
+    />
+    <meta
+      name="keywords"
+      content="viagens, turismo, pacotes de viagem, destinos, férias, agência de viagens, roteiros"
+    />
 
     <!-- Indexação e Autoria -->
     <meta name="robots" content="index, follow" />
@@ -29,19 +35,37 @@
         <section class="quote-section quote-section--with-background">
           <div class="quote-section__container">
             <div class="quote-section__header">
-              <img src="./assets/img/aviao.png" alt="Ícone de avião representando viagens" class="quote-section__icon" />
+              <img
+                src="./assets/img/aviao.png"
+                alt="Ícone de avião representando viagens"
+                class="quote-section__icon"
+              />
               <h2 class="quote-section__title">Solicite um orçamento</h2>
             </div>
-            <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" class="quote-form">
+            <form id="quote-form" action="http://127.0.0.1:8000/api/orcamentos" method="post" class="quote-form">
               <h2 class="quote-form__title">Informe seus dados</h2>
 
               <fieldset class="fieldset">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Nome completo" required class="form-input" />
                 <label for="email" class="form-label">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="E-mail para contato" required class="form-input" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail para contato"
+                  required
+                  class="form-input"
+                />
                 <label for="celular" class="form-label">Celular</label>
-                <input type="tel" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX" required class="form-input" />
+                <input
+                  type="tel"
+                  name="celular"
+                  id="celular"
+                  placeholder="(XX) XXXXX-XXXX"
+                  required
+                  class="form-input"
+                />
               </fieldset>
 
               <fieldset class="fieldset">
@@ -61,14 +85,24 @@
                 <div class="form-row">
                   <div class="form-group">
                     <label for="origem" class="form-label">Origem</label>
-                    <select name="origem" id="origem" required class="form-select">
-                      <option value="">Partindo de</option>
+                    <select name="origem" id="origem" class="form-select" required>
+                      <option value="" disabled selected>Partindo de</option>
+                      <option value="São Paulo">São Paulo</option>
+                      <option value="Rio de Janeiro">Rio de Janeiro</option>
+                      <option value="Belo Horizonte">Belo Horizonte</option>
+                      <option value="Brasília">Brasília</option>
+                      <option value="Salvador">Salvador</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="destino" class="form-label">Destino</label>
-                    <select name="destino" id="destino" required class="form-select">
-                      <option value="">Indo para</option>
+                    <select name="destino" id="destino" class="form-select" required>
+                      <option value="" disabled selected>Indo para</option>
+                      <option value="Rio de Janeiro">Rio de Janeiro</option>
+                      <option value="Manaus">Manaus</option>
+                      <option value="Niterói">Niterói</option>
+                      <option value="São Paulo">São Paulo</option>
+                      <option value="Lençóis Maranhenses">Lençóis Maranhenses</option>
                     </select>
                   </div>
                 </div>
@@ -120,13 +154,33 @@
             <p class="offers-section__subtitle">Com até <strong>50%</strong> de desconto</p>
             <div class="offers-gallery">
               <figure class="offers-gallery__featured">
-                <img src="./assets/img/rio.jpg" alt="Vista aérea do Rio de Janeiro com Cristo Redentor e Pão de Açúcar" class="offers-gallery__image offers-gallery__image--featured" />
+                <img
+                  src="./assets/img/rio.jpg"
+                  alt="Vista aérea do Rio de Janeiro com Cristo Redentor e Pão de Açúcar"
+                  class="offers-gallery__image offers-gallery__image--featured"
+                />
               </figure>
               <figure class="offers-gallery__grid">
-                <img src="./assets/img/manaus.jpg" alt="Teatro Amazonas em Manaus com arquitetura clássica" class="offers-gallery__image" />
-                <img src="./assets/img/niteroi.jpg" alt="Museu de Arte Contemporânea de Niterói com vista para a Baía de Guanabara" class="offers-gallery__image" />
-                <img src="./assets/img/saopaulo.jpg" alt="Skyline de São Paulo com arranha-céus e centro financeiro" class="offers-gallery__image" />
-                <img src="./assets/img/maranhao.jpg" alt="Lençóis Maranhenses com dunas brancas e lagoas cristalinas" class="offers-gallery__image" />
+                <img
+                  src="./assets/img/manaus.jpg"
+                  alt="Teatro Amazonas em Manaus com arquitetura clássica"
+                  class="offers-gallery__image"
+                />
+                <img
+                  src="./assets/img/niteroi.jpg"
+                  alt="Museu de Arte Contemporânea de Niterói com vista para a Baía de Guanabara"
+                  class="offers-gallery__image"
+                />
+                <img
+                  src="./assets/img/saopaulo.jpg"
+                  alt="Skyline de São Paulo com arranha-céus e centro financeiro"
+                  class="offers-gallery__image"
+                />
+                <img
+                  src="./assets/img/maranhao.jpg"
+                  alt="Lençóis Maranhenses com dunas brancas e lagoas cristalinas"
+                  class="offers-gallery__image"
+                />
               </figure>
             </div>
           </div>
@@ -140,7 +194,11 @@
             <div class="nature-destinations">
               <div class="destination-card">
                 <figure class="destination-card__image-wrapper">
-                  <img src="./assets/img/lencol.jpg" alt="Lençóis Maranhenses com dunas de areia branca e lagoas azuis cristalinas no Maranhão" class="destination-card__image" />
+                  <img
+                    src="./assets/img/lencol.jpg"
+                    alt="Lençóis Maranhenses com dunas de areia branca e lagoas azuis cristalinas no Maranhão"
+                    class="destination-card__image"
+                  />
                 </figure>
                 <div class="destination-card__content">
                   <h3 class="destination-card__title">Lençois Maranhenses, Brasil</h3>
@@ -150,7 +208,11 @@
 
               <div class="destination-card">
                 <figure class="destination-card__image-wrapper">
-                  <img src="./assets/img/goias.jpg" alt="Cachoeira Santa Bárbara com águas azul turquesa e paredões rochosos em Goiás" class="destination-card__image" />
+                  <img
+                    src="./assets/img/goias.jpg"
+                    alt="Cachoeira Santa Bárbara com águas azul turquesa e paredões rochosos em Goiás"
+                    class="destination-card__image"
+                  />
                 </figure>
                 <div class="destination-card__content">
                   <h3 class="destination-card__title">Cachoeira Santa Bárbara, Brasil</h3>
@@ -173,7 +235,7 @@
                 Realizando sonhos e criando memórias inesquecíveis através das melhores experiências de viagem.
               </p>
             </div>
-            
+
             <div class="footer__links">
               <div class="footer__column">
                 <h4 class="footer__column-title">Destinos</h4>
@@ -184,7 +246,7 @@
                   <li><a href="#" class="footer__link">Ásia</a></li>
                 </ul>
               </div>
-              
+
               <div class="footer__column">
                 <h4 class="footer__column-title">Serviços</h4>
                 <ul class="footer__list">
@@ -194,7 +256,7 @@
                   <li><a href="#" class="footer__link">Seguro Viagem</a></li>
                 </ul>
               </div>
-              
+
               <div class="footer__column">
                 <h4 class="footer__column-title">Atendimento</h4>
                 <ul class="footer__list">
@@ -204,7 +266,7 @@
                   <li><a href="#" class="footer__link">Termos de Uso</a></li>
                 </ul>
               </div>
-              
+
               <div class="footer__column">
                 <h4 class="footer__column-title">Contato</h4>
                 <div class="footer__contact">
@@ -220,17 +282,64 @@
               </div>
             </div>
           </div>
-          
+
           <div class="footer__bottom">
-            <p class="footer__copyright">
-              &copy; 2024 Agência de Viagens. Todos os direitos reservados.
-            </p>
+            <p class="footer__copyright">&copy; 2024 Agência de Viagens. Todos os direitos reservados.</p>
             <p class="footer__author">
-              Desenvolvido por <a href="#" class="footer__link footer__link--author">Flávio Pimentel</a>
+              Desenvolvido por
+              <a href="#" class="footer__link footer__link--author">Flávio Pimentel</a>
             </p>
           </div>
         </div>
       </footer>
     </div>
+    <script>
+      const quoteForm = document.getElementById("quote-form");
+
+      quoteForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const data = new FormData(quoteForm);
+        const quartoInfantil = quoteForm.querySelector('input[name="quarto_infantil"]:checked');
+
+        const payload = {
+          nome: data.get("nome"),
+          email: data.get("email"),
+          celular: data.get("celular"),
+          data_ida: data.get("data_ida") || null,
+          data_volta: data.get("data_volta") || null,
+          origem: data.get("origem"),
+          destino: data.get("destino"),
+          quarto_infantil: quartoInfantil ? quartoInfantil.value : null,
+          piscina: data.get("piscina") || null,
+          wifi: data.get("wifi") || null,
+          garagem: data.get("garagem") || null,
+          suite: data.get("suite") || null,
+        };
+
+        try {
+          const response = await fetch("http://127.0.0.1:8000/api/orcamentos", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+
+          if (!response.ok) {
+            const errorText = await response.text();
+            console.error("Erro do servidor:", errorText);
+            throw new Error(`Erro ${response.status}: ${errorText.substring(0, 100)}`);
+          }
+
+          const responseData = await response.json();
+          alert("Orçamento enviado com sucesso!");
+          quoteForm.reset();
+        } catch (error) {
+          console.error("Erro completo:", error);
+          alert("Erro: " + error.message);
+        }
+      });
+    </script>
   </body>
 </html>
