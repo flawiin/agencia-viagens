@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -42,7 +42,7 @@
               />
               <h2 class="quote-section__title">Solicite um orçamento</h2>
             </div>
-            <form id="quote-form" action="http://127.0.0.1:8000/api/orcamentos" method="post" class="quote-form">
+            <form id="quote-form" class="quote-form">
               <h2 class="quote-form__title">Informe seus dados</h2>
 
               <fieldset class="fieldset">
@@ -322,6 +322,7 @@
             method: "POST",
             headers: {
               "Content-Type": "application/json",
+              Accept: "application/json",
             },
             body: JSON.stringify(payload),
           });
